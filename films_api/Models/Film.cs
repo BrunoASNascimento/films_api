@@ -4,6 +4,8 @@ namespace films_api.Models
 {
     public class Film
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage ="The Title of the film is required.")]
         public string Title { get; set; }
         [Required(ErrorMessage = "The Genre of the film is required.")]
