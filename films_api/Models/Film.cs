@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace films_api.Models
 {
     public class Film
     {
+        [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required(ErrorMessage ="The Title of the film is required.")]
